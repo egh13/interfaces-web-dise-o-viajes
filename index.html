@@ -1,0 +1,88 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Travel The World</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header class="site-header">
+<div class="nav">
+<a href="#" class="brand" aria-label="Inicio Travel The World">
+<span class="brand-logo" aria-hidden="true"></span>
+<span>TravelTheWorld</span>
+</a>
+
+
+<form class="search" role="search" aria-label="Buscar destinos">
+<input type="search" placeholder="¿A dónde quieres ir? (ciudad, país, hotel)" />
+<button type="submit">Buscar</button>
+</form>
+
+
+<button class="hamburger" aria-label="Abrir menú">☰</button>
+
+
+<nav class="primary" aria-label="Navegación principal">
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="lugares.html">Lugares</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main>
+<section class="hero">
+<h1>Encuentra tu próxima escapada</h1>
+<p>Compara y reserva estancias con ofertas reales. Personalizamos tus viajes para que sólo te preocupes de disfrutar.</p>
+</section>
+
+
+<section class="grid" aria-label="Contenido destacado">
+<article class="card">
+<div class="body">
+<h2>Paquetes a tu medida</h2>
+<p>Desde aventuras extremas hasta escapadas relajantes, diseñamos experiencias que se adaptan a tu presupuesto y estilo de viaje.</p>
+<ul>
+<li>City breaks y fines de semana</li>
+<li>Rutas naturaleza y montaña</li>
+<li>Playas y relax</li>
+</ul>
+</div>
+</article>
+
+
+<aside class="card">
+<figure>
+<img src="FONDOS_PARA_WEB/agencia-de-viajes-online.jpg" alt="Montaje de destinos y servicios de viaje" onerror="this.src='https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?q=80&w=1600&auto=format&fit=crop'"/>
+<figcaption><a style="color: inherit; text-decoration: none;" href="servicios.html">Servicios que ofrecemos</a></figcaption>
+</figure>
+</aside>
+</section>
+</main>
+
+
+<footer>
+© 2025 — TravelTheWorld
+</footer>
+
+
+<script>
+const burger = document.querySelector('.hamburger');
+const primary = document.querySelector('nav.primary');
+burger?.addEventListener('click', ()=>{
+const visible = getComputedStyle(primary).display !== 'none';
+primary.style.display = visible ? 'none' : 'block';
+});
+</script>
+</body>
+</html>
