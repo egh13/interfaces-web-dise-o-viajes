@@ -4,18 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Diseño</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/lugares.css">
 </head>
 <body>
-    <header>
-        <h1>Prueba HTML</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="lugares.html">lugares</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="site-header">
+<div class="nav">
+<a href="#" class="brand" aria-label="Inicio Travel The World">
+<span class="brand-logo" aria-hidden="true"></span>
+<span>TravelTheWorld</span>
+</a>
+<form class="search" role="search" aria-label="Buscar destinos">
+<input type="search" placeholder="¿A dónde quieres ir? (ciudad, país, hotel)" />
+<button type="submit">Buscar</button>
+</form>
+<nav class="primary" aria-label="Navegación principal">
+<ul class="menu">
+<li><a href="index.html">Inicio</a></li>
+<li><a href="lugares.html">Lugares</a></li>
+<li><a href="servicios.html">Servicios</a></li>
+<li><a href="contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<!-- Carrusel de fotos (CSS-only, scroll-snap) -->
+<section class="carousel" aria-label="Galería de lugares">
+ <section class="galeria">
+    <figure>
+      <img src="5-lugares-turisticos-de-Europa-5.jpg" alt="Madrid - City Break">
+      <figcaption>Madrid — City Break</figcaption>
+    </figure>
+    <figure>
+      <img src="paises-que-visitar-de-europa.jpg" alt="Islas Canarias - Sol y playa">
+      <figcaption>Islas Canarias — Sol & Playa</figcaption>
+    </figure>
+    <figure>
+      <img src="ciudades europeas.jpg" alt="Alpes - Naturaleza">
+      <figcaption>Alpes — Naturaleza</figcaption>
+    </figure>
+    <figure>
+      <img src="images.jpeg" alt="Japón - Aventura">
+      <figcaption>Japón — Aventura</figcaption>
+    </figure>
+    <figure>
+      <img src="ciudades-de-europa-mas-bonitas.webp" alt="Costa Rica - Exploración">
+      <figcaption>Costa Rica — Exploración</figcaption>
+    </figure>
+    <figure>
+      <img src="imagenes.jpeg" alt="Ámsterdam - Romántico">
+      <figcaption>Ámsterdam — Romántico</figcaption>
+    </figure>
+  </section>
+</section>
+<section class="hero">
+<h1>Lugares</h1>
+<p>Destinos seleccionados para todo tipo de viajeros.</p>
+</section>
+<section class="hero">
+<article class="card">
+<figure>
+<img src="FONDOS_PARA_WEB/europa-1.jpg" alt="Ámsterdam">
+<figcaption>Romántico — 4 noches</figcaption>
+</figure>
+<div class="body">
+<h3>Ámsterdam</h3>
+<p>Canales, museos y bicis por todas partes.</p>
+</div>
+</article>
+</div>
 
-    <main>
+
+<!-- Calculadora compacta acorde al estilo del sitio (solo visual) -->
+<aside class="calc-card" aria-label="Calculadora de viaje (visual)">
+<h2>Calcula tu presupuesto</h2>
+<form action="#" method="get" class="calc-form">
+<label>
+Vuelos (total)
+<input type="number" placeholder="€">
+</label>
+<label>
+Hotel (€/noche)
+<input type="number" placeholder="€">
+</label>
+<label>
+Noches
+<input type="number" placeholder="0">
+</label>
+<label>
+Personas
+<input type="number" placeholder="1">
+</label>
+<label class="full">
+Extras
+<input type="number" placeholder="€ transporte, visitas…">
+</label>
+<div class="total">
+<span>Total estimado</span>
+<strong>—</strong>
+</div>
+<div class="keypad" aria-hidden="true">
+<button type="button">7</button>
+<button type="button">8</button>
+<button type="button">9</button>
+<button type="button" class="op">÷</button>
+<button type="button">4</button>
+<button type="button">5</button>
+<button type="button">6</button>
+<button type="button" class="op">×</button>
+<button type="button">1</button>
+<button type="button">2</button>
+<button type="button">3</button>
+<button type="button" class="op">−</button>
+<button type="button" class="zero">0</button>
+<button type="button">,</button>
+<button type="button" class="op">+</button>
+</div>
+<button class="calc-cta" type="button" disabled>Calcular (vista previa)</button>
+</form>
+</aside>
+</section>
+</main>
+<footer>
+© 2025 — TravelTheWorld
+</footer>
+</body>
+</html>

@@ -23,11 +23,6 @@
 <input type="search" placeholder="¿A dónde quieres ir? (ciudad, país, hotel)" />
 <button type="submit">Buscar</button>
 </form>
-
-
-<button class="hamburger" aria-label="Abrir menú">☰</button>
-
-
 <nav class="primary" aria-label="Navegación principal">
 <ul class="menu">
 <li><a href="index.html">Inicio</a></li>
@@ -75,14 +70,5 @@
 © 2025 — TravelTheWorld
 </footer>
 
-
-<script>
-const burger = document.querySelector('.hamburger');
-const primary = document.querySelector('nav.primary');
-burger?.addEventListener('click', ()=>{
-const visible = getComputedStyle(primary).display !== 'none';
-primary.style.display = visible ? 'none' : 'block';
-});
-</script>
 </body>
 </html>
